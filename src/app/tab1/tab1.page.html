@@ -1,19 +1,64 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Cardápio  
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <p>Ronan Adriel Zenatti</p>
+  <ion-searchbar></ion-searchbar>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-list>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://t4.ftcdn.net/jpg/02/96/96/71/360_F_296967135_DAjY06XgRvqzYr3WYzHvmQp4C66QxM00.jpg">
+        </ion-thumbnail>
+        <ion-label>Calabresa</ion-label>
+        <ion-badge color="tertiary">R$22,00</ion-badge>
+      </ion-item>
+    
+    
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://www.comidaereceitas.com.br/wp-content/uploads/2020/12/pizza_brocolis.jpg">
+        </ion-thumbnail>
+        <ion-label>Brocolis</ion-label>
+        <ion-badge color="tertiary">R$22,00</ion-badge>
+      </ion-item>
+    
+    
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://receitasimplesefacil.com.br/wp-content/uploads/2021/09/Pizza-Portuguesa-scaled-1200x675.jpg">
+        </ion-thumbnail>
+        <ion-label>Portuguesa</ion-label>
+        <ion-badge color="tertiary">R$22,00</ion-badge>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://images.aws.nestle.recipes/original/6fb35c719aeddbb8d8e6713f2ec979cd_pizza-frango-catupiry-receitas-nestle.jpg">
+        </ion-thumbnail>
+        <ion-label>Frango com Catupiry</ion-label>
+        <ion-badge color="tertiary">R$22,00</ion-badge>
+      </ion-item>
+    
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://luccapizzaria.com.br/wp-content/uploads/2020/04/baiana.jpg">
+        </ion-thumbnail>
+        <ion-label>Baiana</ion-label>
+        <ion-badge color="tertiary">R$22,00</ion-badge>
+      </ion-item>
+    
+  </ion-list> 
+
+
 </ion-content>
